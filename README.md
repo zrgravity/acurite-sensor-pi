@@ -17,7 +17,13 @@ Connect +5V and GND to their respective pins, and DATA to a 51kΩ resistor then 
 
 ## Building
 
-Install `libcurl4-openssl-dev` and `libcurlpp-dev` with apt.
+Install `libcurl4-openssl-dev`, `libcurlpp-dev`, and `cmake` with apt:
+
+`sudo apt-get install build-essential gdb cmake libcurl4-openssl-dev libcurlpp-dev`
+
+This project can be opened in VS Code, or as a Remote SSH target in VS Code. See [Remote Development using SSH](https://code.visualstudio.com/docs/remote/ssh) for setup.
+
+### Old Method (Visual Studio)
 
 Enable SSH on your Pi. Currently this is a Visual Studio 2019 C++ project that uses SSH to your Pi to build and deploy. It builds on the pi with g++, not MSVC. 
 
